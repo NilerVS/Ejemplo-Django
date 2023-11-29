@@ -1,0 +1,9 @@
+<h1>Actualizar Usuario</h1>
+
+<form class="grid-x callout grid-margin-x" method="POST" enctype="multipart/form-data">{% csrf_token %}
+
+    {{form.as_p}}
+
+    <button type = submit> Actualizar</button>
+
+</form>

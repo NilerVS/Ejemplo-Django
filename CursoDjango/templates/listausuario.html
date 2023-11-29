@@ -1,0 +1,16 @@
+<h1>Lista de usuarios</h1>
+
+<ul>
+    {% for e in listarusuario %}
+    <li>
+        {{e.nombre}} 
+        {{e.apellidoPaterno}}
+        {{e.apellidoMaterno}} -
+        <a type="button" href="{% url 'usuario_app:actulizarusuario' e.id %}" >Editar</a>
+
+        <a type="button" href="{% url 'usuario_app:eliminarusuario' e.id %}" >Eliminar</a>
+    </li>
+    {% endfor %}
+</ul>
+
+

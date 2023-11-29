@@ -1,0 +1,11 @@
+<h1>Eliminar Usuario</h1>
+
+
+<form class="cell" method="POST">{% csrf_token %}
+
+<p>Estas seguro que deseas eliminar al usuario: {{object.nombre}}, {{object.apellidoPaterno}}  {{object.apellidoMaterno}}  </p>
+
+<button type = submit> Si, Eliminar</button>
+</form>
+
+
